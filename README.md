@@ -150,4 +150,4 @@ Hyperparameters are stored in `/tmp/DI4Text/diModules/ChineseNER/config.ini`.
 <h2 align="center" >Neural Network Structure</h2>
 For a given token, its input respresentation is constructed by summing the corresponding token, sement, and position embeddings. The character-level embeddings are the output of BERT. These embeddings are used as the input of the corresponding slot in the bidirectional LSTM. In turn, the output of the Bi-LSTM slot is noted as hi and used as input for the CRF. Eventually, the CRF slot emits prediction of labels. Token “长” is the 1-th token in the sentence and is predicted as “B-LOC”.
 
-![model.jpg](images/model.jpg)
+![model.jpg](model.jpg)
